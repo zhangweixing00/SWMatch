@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Background", "Background", "{B2EAE4EA-56D7-411E-9884-26796B64088D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{B2A6F757-7545-41FC-8985-15C854A3FCF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Restful", "Restful", "{0C6B7509-C218-4158-9F3A-4232664DC930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchData", "FetchData\FetchData.csproj", "{B323E356-0763-4823-B669-73FCF44F9D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F05D592D-D843-4CA9-896F-3867E351501C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacePlatform", "InterfacePlatform\InterfacePlatform.csproj", "{6C25B699-620B-41D2-9701-A2C4CE29177A}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TrasferSite", "..\TrasferSite\", "{522CBC0B-B37B-4E03-8209-3E2E27740748}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/TrasferSite"
+		Debug.AspNetCompiler.PhysicalPath = "..\TrasferSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TrasferSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TrasferSite"
+		Release.AspNetCompiler.PhysicalPath = "..\TrasferSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TrasferSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50056"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Debug|x86.ActiveCfg = Debug|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Debug|x86.Build.0 = Debug|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Release|Any CPU.ActiveCfg = Release|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Release|x86.ActiveCfg = Release|x86
+		{B323E356-0763-4823-B669-73FCF44F9D84}.Release|x86.Build.0 = Release|x86
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F05D592D-D843-4CA9-896F-3867E351501C}.Release|x86.ActiveCfg = Release|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6C25B699-620B-41D2-9701-A2C4CE29177A}.Release|x86.ActiveCfg = Release|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|x86.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B323E356-0763-4823-B669-73FCF44F9D84} = {B2EAE4EA-56D7-411E-9884-26796B64088D}
+		{F05D592D-D843-4CA9-896F-3867E351501C} = {B2A6F757-7545-41FC-8985-15C854A3FCF9}
+		{6C25B699-620B-41D2-9701-A2C4CE29177A} = {0C6B7509-C218-4158-9F3A-4232664DC930}
+		{522CBC0B-B37B-4E03-8209-3E2E27740748} = {0C6B7509-C218-4158-9F3A-4232664DC930}
+	EndGlobalSection
+EndGlobal

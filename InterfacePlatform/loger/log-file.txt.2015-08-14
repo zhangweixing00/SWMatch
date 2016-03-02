@@ -1,0 +1,181 @@
+
+----------------------header--------------------------
+2015-08-14 13:46:22,671 [4] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>a b c d</Content></xml>
+2015-08-14 13:46:23,249 [4] DEBUG logger [(null)]  - ResponseContent:
+2015-08-14 13:47:01,167 [4] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>a b c d</Content></xml>
+2015-08-14 13:47:01,169 [4] DEBUG logger [(null)]  - ResponseContent:
+2015-08-14 13:47:06,308 [5] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>a b c d</Content></xml>
+2015-08-14 13:47:06,310 [5] DEBUG logger [(null)]  - ResponseContent:
+2015-08-14 13:47:16,704 [11] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>a b c d</Content></xml>
+2015-08-14 13:47:20,151 [11] DEBUG logger [(null)]  - ResponseContent:
+2015-08-14 13:47:38,211 [5] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>a b c d</Content></xml>
+2015-08-14 13:48:01,897 [5] DEBUG logger [(null)]  - ResponseContent:
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-14 13:49:19,946 [11] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>a b c d</Content></xml>
+2015-08-14 13:49:32,375 [11] DEBUG logger [(null)]  - 输入文本：a b c d
+2015-08-14 13:50:11,078 [11] DEBUG logger [(null)]  - 输出：
+2015-08-14 13:50:12,919 [11] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>1171925824</CreateTime>
+  <MsgType>text</MsgType>
+  <Content />
+</xml>
+2015-08-14 13:50:18,291 [11] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>a b c d</Content></xml>
+2015-08-14 13:50:22,841 [11] DEBUG logger [(null)]  - 输入文本：a b c d
+2015-08-14 13:51:02,894 [11] DEBUG logger [(null)]  - 输出：
+2015-08-14 13:51:03,497 [11] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>1690075461</CreateTime>
+  <MsgType>text</MsgType>
+  <Content />
+</xml>
+2015-08-14 13:51:38,420 [16] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>胡萝卜 白菜 猪肉 鸡蛋</Content></xml>
+2015-08-14 13:51:42,144 [16] DEBUG logger [(null)]  - 输入文本：胡萝卜 白菜 猪肉 鸡蛋
+2015-08-14 13:51:53,865 [16] DEBUG logger [(null)]  - 输出：
+2015-08-14 13:51:54,862 [16] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>-2095192682</CreateTime>
+  <MsgType>text</MsgType>
+  <Content />
+</xml>
+2015-08-14 13:51:56,822 [15] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>胡萝卜 白菜 猪肉 鸡蛋</Content></xml>
+2015-08-14 13:52:00,663 [15] DEBUG logger [(null)]  - 输入文本：胡萝卜 白菜 猪肉 鸡蛋
+2015-08-14 13:52:23,558 [15] DEBUG logger [(null)]  - 输出：
+2015-08-14 13:52:24,366 [15] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>-1798255698</CreateTime>
+  <MsgType>text</MsgType>
+  <Content />
+</xml>
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-14 13:53:06,136 [17] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>胡萝卜 白菜 猪肉 鸡蛋</Content></xml>
+2015-08-14 13:53:08,766 [17] DEBUG logger [(null)]  - 输入文本：胡萝卜 白菜 猪肉 鸡蛋
+2015-08-14 13:53:15,753 [17] DEBUG logger [(null)]  - 输出：白菜与猪肉宜搭配，补充营养通便
+所有均不冲突
+2015-08-14 13:53:16,988 [17] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>-1276315845</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>白菜与猪肉宜搭配，补充营养通便
+所有均不冲突</Content>
+</xml>
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-14 14:17:08,560 [14] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>,</Content></xml>
+2015-08-14 14:17:26,147 [14] DEBUG logger [(null)]  - 输入文本：,
+2015-08-14 14:17:42,258 [14] DEBUG logger [(null)]  - 输出：
+2015-08-14 14:17:42,700 [14] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>503851061</CreateTime>
+  <MsgType>text</MsgType>
+  <Content />
+</xml>
+2015-08-14 14:17:51,830 [14] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>,</Content></xml>
+2015-08-14 14:18:05,170 [14] DEBUG logger [(null)]  - 输入文本：,
+2015-08-14 14:18:05,171 [14] DEBUG logger [(null)]  - 输出：
+2015-08-14 14:18:05,172 [14] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>732964166</CreateTime>
+  <MsgType>text</MsgType>
+  <Content />
+</xml>
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-14 14:20:16,754 [12] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>,</Content></xml>
+2015-08-14 14:20:18,976 [12] DEBUG logger [(null)]  - 输入文本：,
+2015-08-14 14:20:20,450 [12] DEBUG logger [(null)]  - 输出：
+2015-08-14 14:20:20,806 [12] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>2085761541</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>请输入一种食材名称</Content>
+</xml>
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-14 17:32:13,400 [83] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>xx</Content></xml>
+2015-08-14 17:32:14,287 [83] DEBUG logger [(null)]  - 输入文本：xx
+2015-08-14 17:32:14,543 [83] DEBUG logger [(null)]  - 输出：没有找到与xx相关的食材，换个名称试试^_^
+获取查询方法请输入问号
+2015-08-14 17:32:14,969 [83] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>1262570233</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>没有找到与xx相关的食材，换个名称试试^_^
+获取查询方法请输入问号</Content>
+</xml>
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-14 17:35:21,197 [12] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>ff</Content></xml>
+2015-08-14 17:35:25,624 [12] DEBUG logger [(null)]  - 输入文本：ff
+2015-08-14 17:35:26,579 [12] DEBUG logger [(null)]  - 输出：没有找到与ff相关的食材，换个名称试试^_^
+获取查询方法请输入问号
+2015-08-14 17:35:26,967 [12] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>-1112027224</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>没有找到与ff相关的食材，换个名称试试^_^
+获取查询方法请输入问号</Content>
+</xml>
+2015-08-14 17:35:30,592 [12] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>,</Content></xml>
+2015-08-14 17:35:33,952 [12] DEBUG logger [(null)]  - 输入文本：,
+2015-08-14 17:35:35,043 [12] DEBUG logger [(null)]  - 输出：
+2015-08-14 17:35:55,215 [12] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>-825690846</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>查询食物直接输入名称；\r\n查询食物能不能一块吃，请输入要查询的几种食物，以空格分隔</Content>
+</xml>
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-14 17:36:18,668 [83] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>,</Content></xml>
+2015-08-14 17:36:22,001 [83] DEBUG logger [(null)]  - 输入文本：,
+2015-08-14 17:36:23,292 [83] DEBUG logger [(null)]  - 输出：
+2015-08-14 17:43:57,877 [83] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>-301912526</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>查询食物直接输入名称；
+         查询食物能不能一块吃，请输入要查询的几种食物，以空格分隔</Content>
+</xml>
+
+----------------------footer--------------------------

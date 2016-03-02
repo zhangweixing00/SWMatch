@@ -1,0 +1,106 @@
+
+----------------------header--------------------------
+2015-08-17 13:37:03,221 [5] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>红薯</Content></xml>
+2015-08-17 13:37:25,824 [5] DEBUG logger [(null)]  - Log.error:基础提供程序在 Open 上失败。
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Objects.ObjectContext.SaveChanges()
+   在 InterfacePlatform.Log.LogUserOp.Log(String uid, String opdes, Int32 type) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Log\LogUserOp.cs:行号 22
+2015-08-17 13:37:28,296 [5] DEBUG logger [(null)]  - 输入文本：红薯
+2015-08-17 13:37:57,489 [5] DEBUG logger [(null)]  - error:基础提供程序在 Open 上失败。
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 InterfacePlatform.Core.BLLProcess.Recognite(String userString) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 42
+   在 InterfacePlatform.Core.BLLProcess.Entry(String userString) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 103
+   在 InterfacePlatform.Interface.WeixinApiDispatch.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\WeixinApiDispatch.cs:行号 22
+   在 InterfacePlatform.Interface.Entry.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\Entry.ashx.cs:行号 51
+2015-08-17 13:38:47,676 [4] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>红薯</Content></xml>
+2015-08-17 13:39:11,601 [4] DEBUG logger [(null)]  - Log.error:基础提供程序在 Open 上失败。
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Objects.ObjectContext.SaveChanges()
+   在 InterfacePlatform.Log.LogUserOp.Log(String uid, String opdes, Int32 type) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Log\LogUserOp.cs:行号 22
+2015-08-17 13:39:11,602 [4] DEBUG logger [(null)]  - 输入文本：红薯
+2015-08-17 13:39:17,945 [4] DEBUG logger [(null)]  - error:基础提供程序在 Open 上失败。
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 InterfacePlatform.Core.BLLProcess.Recognite(String userString) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 42
+   在 InterfacePlatform.Core.BLLProcess.Entry(String userString) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 103
+   在 InterfacePlatform.Interface.WeixinApiDispatch.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\WeixinApiDispatch.cs:行号 22
+   在 InterfacePlatform.Interface.Entry.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\Entry.ashx.cs:行号 51
+2015-08-17 13:39:23,210 [11] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>红薯</Content></xml>
+2015-08-17 13:39:23,858 [11] DEBUG logger [(null)]  - Log.error:基础提供程序在 Open 上失败。
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   在 System.Data.Objects.ObjectContext.SaveChanges()
+   在 InterfacePlatform.Log.LogUserOp.Log(String uid, String opdes, Int32 type) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Log\LogUserOp.cs:行号 22
+2015-08-17 13:39:23,859 [11] DEBUG logger [(null)]  - 输入文本：红薯
+2015-08-17 13:39:26,577 [11] DEBUG logger [(null)]  - error:基础提供程序在 Open 上失败。
+   在 System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   在 System.Data.EntityClient.EntityConnection.Open()
+   在 System.Data.Objects.ObjectContext.EnsureConnection()
+   在 System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 InterfacePlatform.Core.BLLProcess.Recognite(String userString) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 42
+   在 InterfacePlatform.Core.BLLProcess.Entry(String userString) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 103
+   在 InterfacePlatform.Interface.WeixinApiDispatch.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\WeixinApiDispatch.cs:行号 22
+   在 InterfacePlatform.Interface.Entry.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\Entry.ashx.cs:行号 51
+2015-08-17 13:39:47,235 [6] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>红薯</Content></xml>
+2015-08-17 13:39:48,875 [6] DEBUG logger [(null)]  - 输入文本：红薯
+2015-08-17 13:40:55,256 [6] DEBUG logger [(null)]  - error:未将对象引用设置到对象的实例。
+   在 InterfacePlatform.Core.BLLProcess.SingleP(KeyValuePair`2 product) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 282
+   在 InterfacePlatform.Core.BLLProcess.Entry(String userString) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Core\BLLProcess.cs:行号 107
+   在 InterfacePlatform.Interface.WeixinApiDispatch.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\WeixinApiDispatch.cs:行号 22
+   在 InterfacePlatform.Interface.Entry.Execute(String postStr) 位置 F:\Work\Work\SWMatch\SWMatch\InterfacePlatform\Interface\Entry.ashx.cs:行号 51
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-17 13:54:19,308 [12] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>红薯</Content></xml>
+2015-08-17 13:54:22,280 [12] DEBUG logger [(null)]  - 输入文本：红薯
+2015-08-17 13:54:25,761 [12] DEBUG logger [(null)]  - 输出：红薯，补中益气、宽肠通便、归脾经、归肾经、富含锰、低钙、低钾、低钠、易产气、...
+适宜：一般人群都可食用。适宜糖尿病患者。
+禁忌：湿阻脾胃、气滞食积者应慎食。
+相克：鸡肉、西红柿、柿子、香蕉、鸡蛋、鸡翅、梭子蟹、鸡胸脯肉、螃蟹、河蟹。
+相宜：莲子、猪小排、芹菜、糙米。
+2015-08-17 13:54:26,117 [12] DEBUG logger [(null)]  - ResponseContent:<?xml version="1.0" encoding="utf-16"?>
+<xml>
+  <ToUserName>321</ToUserName>
+  <FromUserName>123</FromUserName>
+  <CreateTime>1558483180</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>红薯，补中益气、宽肠通便、归脾经、归肾经、富含锰、低钙、低钾、低钠、易产气、...
+适宜：一般人群都可食用。适宜糖尿病患者。
+禁忌：湿阻脾胃、气滞食积者应慎食。
+相克：鸡肉、西红柿、柿子、香蕉、鸡蛋、鸡翅、梭子蟹、鸡胸脯肉、螃蟹、河蟹。
+相宜：莲子、猪小排、芹菜、糙米。</Content>
+</xml>
+
+----------------------footer--------------------------

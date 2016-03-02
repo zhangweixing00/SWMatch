@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HEModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="HEModelStoreContainer">
+          <EntitySet Name="Catalogue" EntityType="HEModel.Store.Catalogue" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Log_Operation" EntityType="HEModel.Store.Log_Operation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Product" EntityType="HEModel.Store.Product" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RelationShip" EntityType="HEModel.Store.RelationShip" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Catalogue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Name" Type="varchar" MaxLength="200" />
+          <Property Name="Pid" Type="varchar" MaxLength="100" />
+          <Property Name="CurrentPageIndex" Type="int" />
+          <Property Name="CurrentPageStatus" Type="int" />
+          <Property Name="IsFinished" Type="int" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="LastUpdateTime" Type="datetime" />
+          <Property Name="Link" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Log_Operation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+          <Property Name="OpDes" Type="text" />
+          <Property Name="OpTime" Type="datetime" />
+          <Property Name="OpType" Type="int" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" />
+          <Property Name="NickNames" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CataId" Type="varchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="img" Type="nvarchar" MaxLength="200" />
+          <Property Name="Link" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GoodFor" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NoGoodFor" Type="nvarchar" MaxLength="1000" />
+          <Property Name="IsSetMap" Type="int" />
+          <Property Name="XiakeId" Type="int" />
+        </EntityType>
+        <EntityType Name="RelationShip">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PA" Type="varchar" MaxLength="100" />
+          <Property Name="PB" Type="varchar" MaxLength="100" />
+          <Property Name="RType" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Example" Type="text" />
+          <Property Name="CreateTime" Type="datetime" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HEModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="HEEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Catalogue" EntityType="HEModel.Catalogue" />
+          <EntitySet Name="Product" EntityType="HEModel.Product" />
+          <EntitySet Name="RelationShip" EntityType="HEModel.RelationShip" />
+          <EntitySet Name="Log_Operation" EntityType="HEModel.Log_Operation" />
+        </EntityContainer>
+        <EntityType Name="Catalogue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Pid" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CurrentPageIndex" Type="Int32" />
+          <Property Name="CurrentPageStatus" Type="Int32" />
+          <Property Name="IsFinished" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" />
+          <Property Name="LastUpdateTime" Type="DateTime" />
+          <Property Name="Link" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NickNames" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="CataId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="2000" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" />
+          <Property Name="img" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Link" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="GoodFor" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="NoGoodFor" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="IsSetMap" Type="Int32" />
+          <Property Type="Int32" Name="XiakeId" />
+        </EntityType>
+        <EntityType Name="RelationShip">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="PA" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PB" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="RType" />
+          <Property Type="String" Name="Description" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Example" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreateTime" />
+        </EntityType>
+        <EntityType Name="Log_Operation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="UserName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OpDes" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="OpTime" />
+          <Property Type="Int32" Name="OpType" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HEModelStoreContainer" CdmEntityContainer="HEEntities">
+          <EntitySetMapping Name="Catalogue"><EntityTypeMapping TypeName="HEModel.Catalogue"><MappingFragment StoreEntitySet="Catalogue">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Pid" ColumnName="Pid" />
+            <ScalarProperty Name="CurrentPageIndex" ColumnName="CurrentPageIndex" />
+            <ScalarProperty Name="CurrentPageStatus" ColumnName="CurrentPageStatus" />
+            <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="LastUpdateTime" ColumnName="LastUpdateTime" />
+            <ScalarProperty Name="Link" ColumnName="Link" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Product"><EntityTypeMapping TypeName="HEModel.Product"><MappingFragment StoreEntitySet="Product">
+            <ScalarProperty Name="XiakeId" ColumnName="XiakeId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="NickNames" ColumnName="NickNames" />
+            <ScalarProperty Name="CataId" ColumnName="CataId" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+            <ScalarProperty Name="img" ColumnName="img" />
+            <ScalarProperty Name="Link" ColumnName="Link" />
+            <ScalarProperty Name="GoodFor" ColumnName="GoodFor" />
+            <ScalarProperty Name="NoGoodFor" ColumnName="NoGoodFor" />
+            <ScalarProperty Name="IsSetMap" ColumnName="IsSetMap" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="RelationShip">
+            <EntityTypeMapping TypeName="HEModel.RelationShip">
+              <MappingFragment StoreEntitySet="RelationShip">
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="Example" ColumnName="Example" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RType" ColumnName="RType" />
+                <ScalarProperty Name="PB" ColumnName="PB" />
+                <ScalarProperty Name="PA" ColumnName="PA" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Log_Operation">
+            <EntityTypeMapping TypeName="HEModel.Log_Operation">
+              <MappingFragment StoreEntitySet="Log_Operation">
+                <ScalarProperty Name="OpType" ColumnName="OpType" />
+                <ScalarProperty Name="OpTime" ColumnName="OpTime" />
+                <ScalarProperty Name="OpDes" ColumnName="OpDes" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="HE">
+        <EntityTypeShape EntityType="HEModel.Catalogue" Width="1.5" PointX="0.75" PointY="0.75" Height="2.7341113281249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="HEModel.Product" Width="1.5" PointX="2.75" PointY="0.75" Height="3.1161507161458326" IsExpanded="true" />
+        <EntityTypeShape EntityType="HEModel.RelationShip" Width="1.5" PointX="5.25" PointY="0.75" Height="2.7341113281249996" />
+        <EntityTypeShape EntityType="HEModel.Log_Operation" Width="1.5" PointX="0.75" PointY="4.25" Height="1.9700325520833335" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,46 @@
+
+----------------------header--------------------------
+2015-08-13 16:45:40,423 [9] DEBUG logger [(null)]  - WeixinToken 配置项没有配置！xx
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-13 16:59:15,249 [9] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>ee</Content></xml>
+2015-08-13 16:59:19,347 [9] DEBUG logger [(null)]  - 输入文本：ee
+2015-08-13 17:04:56,000 [10] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>ee</Content></xml>
+2015-08-13 17:04:57,758 [10] DEBUG logger [(null)]  - 输入文本：ee
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-13 17:06:55,367 [9] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>ee</Content></xml>
+2015-08-13 17:06:57,867 [9] DEBUG logger [(null)]  - 输入文本：ee
+2015-08-13 17:07:03,055 [9] DEBUG logger [(null)]  - 输出：没有找到与ee相关的
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-13 17:34:22,050 [9] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>ee</Content></xml>
+2015-08-13 17:34:22,408 [9] DEBUG logger [(null)]  - 输入文本：ee
+2015-08-13 17:34:22,629 [9] DEBUG logger [(null)]  - 输出：没有找到与ee相关的
+2015-08-13 17:35:48,062 [4] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>ss</Content></xml>
+2015-08-13 17:35:48,064 [4] DEBUG logger [(null)]  - 输入文本：ss
+2015-08-13 17:35:48,089 [4] DEBUG logger [(null)]  - 输出：没有找到与ss相关的
+
+----------------------footer--------------------------
+
+----------------------header--------------------------
+2015-08-13 17:49:28,975 [13] DEBUG logger [(null)]  - Post:<xml><ToUserName>123</ToUserName><FromUserName>321</FromUserName><CreateTime>11111</CreateTime><MsgType>text</MsgType><Content>ss</Content></xml>
+2015-08-13 17:55:10,715 [13] DEBUG logger [(null)]  - 输入文本：ss
+2015-08-13 17:55:10,858 [13] DEBUG logger [(null)]  - 输出：没有找到与ss相关的
+2015-08-13 17:55:11,267 [13] DEBUG logger [(null)]  - ResponseContent:<xml><ToUserName>oSwljt2sD0LkLJ3y4SWyzj5m0bas</ToUserName>
+  <FromUserName>gh_b7697b14869d</FromUserName>
+  <CreateTime>8526399</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>没有找到与ss相关的</Content></xml>
+
+----------------------footer--------------------------
