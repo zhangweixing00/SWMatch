@@ -15,21 +15,15 @@ namespace InterfacePlatform.Interface
 
             switch (baseMessage.MsgType)
             {
-                 
+
                 case "text":
-                    LogUserOp.Log(baseMessage.FromUserName, string.Format("Query:{0}",postStr), 0);
+                    LogUserOp.Log(baseMessage.FromUserName, string.Format("Query:{0}", postStr), 0);
                     MessageText message = MessageText.GetInfo(postStr);
-                    string responseContent = BLLProcess.Entry(message.Content);
-                    if (string.IsNullOrEmpty(responseContent))
-                    {
-                        responseContent = System.Configuration.ConfigurationManager.AppSettings["tip"];
-                    }
-                    return new ResponseText(message)
-                    {
-                        Content = responseContent
-
-                    }.ToXml();
-
+                    return GetResponseTxt(baseMessage,message.Content);
+                case "voice":
+                    LogUserOp.Log(baseMessage.FromUserName, string.Format("Query:{0}", postStr), 1);
+                    MessageVoice vMsg=MessageVoice.GetInfo(postStr);
+                    return GetResponseTxt(baseMessage, vMsg.Recognition);
                 case "event":
                     return ProcessEvent(postStr);
                 default:
@@ -38,6 +32,20 @@ namespace InterfacePlatform.Interface
 
             return "";
 
+        }
+
+        private static string GetResponseTxt(BaseMessage baseMsg,string message)
+        {
+            string responseContent = BLLProcess.Entry(message);
+            if (string.IsNullOrEmpty(responseContent))
+            {
+                responseContent = System.Configuration.ConfigurationManager.AppSettings["tip"];
+            }
+            return new ResponseText(baseMsg)
+            {
+                Content = responseContent
+
+            }.ToXml();
         }
 
         private string ProcessEvent(string postStr)

@@ -19,6 +19,12 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,8 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>..\..\..\..\PC_BPM\BPM\Pkurg.PWorldBPM.Web\Bin\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
@@ -111,6 +118,7 @@
     </Compile>
     <Compile Include="Interface\MessageEvent.cs" />
     <Compile Include="Interface\MessageEventClick.cs" />
+    <Compile Include="Interface\MessageVoice.cs" />
     <Compile Include="Interface\ResponseMsgType.cs" />
     <Compile Include="Interface\ResponseNews.cs" />
     <Compile Include="Interface\ResponseText.cs" />
@@ -130,6 +138,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Content Include="log4net.config" />
+    <None Include="Properties\PublishProfiles\sw.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -145,9 +154,15 @@
       <Project>{F05D592D-D843-4CA9-896F-3867E351501C}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SW.MiddlePlugin\SW.MiddlePlugin.csproj">
+      <Project>{beeaaa24-1bd7-4641-9c7c-507a07464727}</Project>
+      <Name>SW.MiddlePlugin</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Interface\Entry.ashx" />

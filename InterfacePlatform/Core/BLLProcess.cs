@@ -99,6 +99,25 @@ namespace InterfacePlatform.Core
                 return "";
             }
             Log.Logger.logger.DebugFormat("输入文本：{0}", userString);
+
+            if(Global.MPList.Count>0)
+            {
+                foreach (var item in Global.MPList)
+                {
+                    var ret = item.Execute(userString);
+                    if (ret.Status== SW.MiddlePlugin.ExecuteStatus.截断)
+                    {
+                        Log.Logger.logger.DebugFormat("直接返回文本：{0}", ret.Contents);
+                        return ret.Contents;
+                    }
+                    else if (ret.Status == SW.MiddlePlugin.ExecuteStatus.继续)
+                    {
+                        userString = ret.Contents;
+                        Log.Logger.logger.DebugFormat("转换文本：{0}", userString);
+                    }
+                }
+            }
+
             string backString = "";
             RecogniteInfo info = Recognite(userString);
             switch (info.PType)

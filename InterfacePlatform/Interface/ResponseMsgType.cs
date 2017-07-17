@@ -10,6 +10,7 @@ namespace InterfacePlatform.Interface
         text,
 
         图片,
-        图文
+        图文,
+        Voice
     }
 }

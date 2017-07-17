@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Background", "Background", "{B2EAE4EA-56D7-411E-9884-26796B64088D}"
 EndProject
@@ -35,6 +35,31 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TrasferSite", "..\TrasferSi
 		VWDPort = "50056"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/TrasferSite"
+		Debug.AspNetCompiler.PhysicalPath = "..\TrasferSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TrasferSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TrasferSite"
+		Release.AspNetCompiler.PhysicalPath = "..\TrasferSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TrasferSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50056"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW.MiddlePlugin", "SW.MiddlePlugin\SW.MiddlePlugin.csproj", "{BEEAAA24-1BD7-4641-9C7C-507A07464727}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SWList", "SWList", "{28486783-3C59-4ED5-86F4-8093949ADEE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWMP.FilterSymbol", "SWMP.FilterSymbol\SWMP.FilterSymbol.csproj", "{1C339EDC-4F5F-4748-A980-08317081480F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +111,30 @@ Global
 		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
 		{522CBC0B-B37B-4E03-8209-3E2E27740748}.Release|x86.ActiveCfg = Debug|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Debug|x86.Build.0 = Debug|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Release|x86.ActiveCfg = Release|Any CPU
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727}.Release|x86.Build.0 = Release|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C339EDC-4F5F-4748-A980-08317081480F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,5 +144,8 @@ Global
 		{F05D592D-D843-4CA9-896F-3867E351501C} = {B2A6F757-7545-41FC-8985-15C854A3FCF9}
 		{6C25B699-620B-41D2-9701-A2C4CE29177A} = {0C6B7509-C218-4158-9F3A-4232664DC930}
 		{522CBC0B-B37B-4E03-8209-3E2E27740748} = {0C6B7509-C218-4158-9F3A-4232664DC930}
+		{BEEAAA24-1BD7-4641-9C7C-507A07464727} = {B2A6F757-7545-41FC-8985-15C854A3FCF9}
+		{28486783-3C59-4ED5-86F4-8093949ADEE9} = {B2A6F757-7545-41FC-8985-15C854A3FCF9}
+		{1C339EDC-4F5F-4748-A980-08317081480F} = {28486783-3C59-4ED5-86F4-8093949ADEE9}
 	EndGlobalSection
 EndGlobal
